@@ -1,0 +1,246 @@
+nav ul {
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.5);
+
+}
+
+nav ul li a {
+
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding-inline: 40px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+a:hover{
+    color: #9deefc; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1);
+    text-shadow: 0px 0px 5px rgb(251, 80, 225), 0px 0px 5px rgb(148, 232, 255);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#Apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+#foto{
+    width: 300px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Opcional: deixa a imagem com cantos arredondados */
+    filter: brightness(0.9);
+    border: 2px solid #cccbcb93;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra para dar destaque */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+#foto:hover {
+    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+#texto{
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Sombra para destaque */
+    text-align: justify;
+    line-height: 1.6;
+    z-index: 1;
+}
+
+#bem-vindo{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Contêiner para as partículas */
+#particle-container {
+    background-image: url(rsc/main.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: auto;
+    overflow: hidden;
+    pointer-events: none; /* As partículas não interferem com cliques */
+    background-color: #000; /* Fundo preto para simular o espaço */
+    z-index: 0;
+}
+
+/* Estilo de cada partícula */
+.particle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    z-index: 0;
+
+    background-color: rgb(255, 255, 255); /* Cor branca com leve transparência */
+    border-radius: 50%; /* Partículas redondas */
+}
+
+/* Estilo do texto com efeito cyberpunk */
+.tv-texto {
+    margin-top: 0px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 3em;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0;
+    animation: ligarTV 1s ease-out forwards;
+    background: linear-gradient(90deg, #f2fffc, #b7b7b7, #dedede, #ffffff); /* Gradiente cyberpunk */
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7), 0px 0px 15px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Animação de efeito de "TV Ligando" */
+@keyframes ligarTV {
+    0% {
+        opacity: 0;
+        transform: scaleX(0) scaleY(0.02); /* Linha fina no centro */
+        text-shadow: 0px 0px 10px rgba(115, 255, 255, 0.6), 0px 0px 20px rgba(255, 112, 255, 0.6);
+    }
+    30% {
+        opacity: 1;
+        transform: scaleX(1.8) scaleY(0.1); /* Expande lateralmente */
+        text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8), 0px 0px 30px rgba(255, 112, 255, 0.8);
+    }
+    60% {
+        transform: scaleX(1) scaleY(1); /* Volta ao tamanho normal */
+        text-shadow: 0px 0px 15px rgba(141, 253, 253, 1), 0px 0px 35px rgba(255, 112, 255, 0.9), 0px 0px 50px rgba(0, 128, 255, 0.8);
+    }
+    100% {
+        opacity: 1;
+        
+        text-shadow: 0px 0px 1px rgb(166, 250, 250), 0px 0px 0px rgb(113, 217, 255), 0px 0px 5px #ff21ff, 5px 5px 1px rgb(0, 0, 0);
+    }
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(rsc/fundo3.png);
+    background-size: cover;
+
+}
+
+#curriculo{
+    
+    background-image: url(rsc/main.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: auto;
+    overflow: hidden;
+}
+
+footer{
+    background-image: url(rsc/fundo3.png);
+    background-size: cover;
+    height: 300px;
+    width: auto;
+}
+
+p{
+    margin: 0;
+}
+
+.transicao{
+    position: relative;
+    background-image: url(rsc/transição.png);
+    background-size: cover;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.9),  /* Sombra superior */
+                0px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.slider {
+    position: relative;
+    padding-top: 40px;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cada slide */
+.slide {
+    display: none; /* Somente o slide ativo será exibido */
+    text-align: center;
+}
+
+/* Slide ativo */
+.slide.active {
+    display: block;
+    transition: opacity 1s ease;
+}
+
+/* Imagem do slide */
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Texto do slide */
+.slide-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+/* Botões de controle */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

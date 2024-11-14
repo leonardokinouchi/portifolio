@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Curriculo</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="particle-container">
+            <div class="tv-efeito">
+                <h1 class="tv-texto" id="bem-vindo">Bem-vindo ao meu Portfólio</h1>
+            </div>
+            <div id="Apresentacao">
+                <img src="rsc/foto.jpeg" id="foto"> 
+    
+                <div id="texto">
+                    <h2>Apresentação</h2>
+                    <p>Olá meu nome é Leonardo, sou estudante de engenharia de computação e também de começando na área de desenvolvimento full stack e jogos.</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="transicao"></div>
+            
+            <h2 class="tv-texto">Projetos</h2>
+
+            <div class="slider">
+                <div class="slide active">
+                    <img src="rsc/dashboard/projeto_dashboard_1.png" alt="Projeto 1">
+                    <div class="slide-text">
+                        <h2>Projeto 1</h2>
+                        <p>Descrição do projeto 1.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="rsc/mechdino/Sem título.png" alt="Projeto 2">
+                    <div class="slide-text">
+                        <h2>Projeto 2</h2>
+                        <p>Descrição do projeto 2.</p>
+                    </div>
+                </div>
+                <!-- Adicione mais slides conforme necessário -->
+                
+                <!-- Controles do Slider -->
+                <button class="prev" onclick="showSlide(currentSlide - 1)">&#10094;</button>
+                <button class="next" onclick="showSlide(currentSlide + 1)">&#10095;</button>
+            </div>
+
+        </section>
+
+        <div id="curriculo">
+            <div class="transicao"></div>
+            <h2 class="tv-texto">Curriculo</h2>
+            
+        </div>
+        
+    </main>
+
+
+    <footer>
+        <div class="transicao"></div>
+        <h2 class="tv-texto">Contato</h2>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
