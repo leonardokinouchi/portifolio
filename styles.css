@@ -48,11 +48,13 @@ main{
 
 #Apresentacao{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 100px;
     margin-top: 40px;
     overflow: hidden;
+    columns: 2;
 }
 
 #foto{
@@ -204,13 +206,22 @@ p{
     max-width: 700px;
     margin: auto;
     overflow: hidden;
+    transition: 0.5s;
+    
+    
+}
+
+.slider:hover{
+    transform: scale(1.05);
 }
 
 /* Cada slide */
 .slide {
     display: none; /* Somente o slide ativo será exibido */
     text-align: center;
+    
 }
+
 
 /* Slide ativo */
 .slide.active {
@@ -314,4 +325,24 @@ p{
 
 .link-footer:hover{
     text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 5px rgb(255, 255, 255);
+}
+
+.img{
+    height: auto;
+    width: 50%;
+    border: 5px solid rgba(95, 95, 95, 0.723);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+#particle-container2 {
+    background-image: url(rsc/main.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    pointer-events: none; /* As partículas não interferem com cliques */
+    background-color: #000; /* Fundo preto para simular o espaço */
+    z-index: 0;
+    padding-bottom: 100px;
 }
