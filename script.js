@@ -45,7 +45,3 @@ function showSlide(index) {
     slides[currentSlide].classList.add('active'); // Mostra o próximo slide
 }
 
-// Alterna automaticamente a cada 5 segundos
-setInterval(() => {
-    showSlide(currentSlide + 1);
-}, 20000);

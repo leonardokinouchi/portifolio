@@ -6,6 +6,7 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -13,10 +14,10 @@
 
         <nav>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Curriculo</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" class="link">Início</a></li>
+                <li><a href="#para-projetos" class="link">Projetos</a></li>
+                <li><a href="#curriculo" class="link">Curriculo</a></li>
+                <li><a href="#footer" class="link">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -24,19 +25,19 @@
     <main>
         <div id="particle-container">
             <div class="tv-efeito">
-                <h1 class="tv-texto" id="bem-vindo">Bem-vindo ao meu Portfólio</h1>
+                <h1 class="tv-texto" id="bem-vindo">Bem-vindo!</h1>
             </div>
             <div id="Apresentacao">
                 <img src="rsc/foto.jpeg" id="foto"> 
     
                 <div id="texto">
-                    <h2>Apresentação</h2>
-                    <p>Olá meu nome é Leonardo, sou estudante de engenharia de computação e também de começando na área de desenvolvimento full stack e jogos.</p>
+                    <h2 style="font-weight: bolder; font-size: 25px; margin-top: 0; padding-top: 0;">Apresentação</h2>
+                    <p>Olá meu nome é Leonardo, sou estudante de engenharia de computação e também estou começando na área de desenvolvimento full stack e jogos.</p>
                 </div>
             </div>
         </div>
 
-        <section>
+        <section id="para-projetos">
 
             <div class="transicao"></div>
             
@@ -69,15 +70,38 @@
         <div id="curriculo">
             <div class="transicao"></div>
             <h2 class="tv-texto">Curriculo</h2>
+            <div id="curriculo_botao">
+                <div class="curriculo"></div>
+                <a href="kinouchi_curriculo.pdf" download="kinouchi_curriculo.pdf" class="botao-baixar">
+                    Baixar Curriculo
+                </a>
+            </div>
+            
             
         </div>
         
     </main>
 
 
-    <footer>
+    <footer id="footer">
+
         <div class="transicao"></div>
         <h2 class="tv-texto">Contato</h2>
+
+        <div class="icons">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="link-footer">leonardokinouchi@gmail.com</p>
+
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/leonardokinouchi/" class="link-footer">linkedin.com/in/leonardokinouchi</a>
+
+            <i class="fa-brands fa-whatsapp"></i>
+            <p class="link-footer">(16)98864-3513</p>
+
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/leonardokinouchi" class="link-footer">github.com/leonardokinouchi</a>
+        </div>
+
     </footer>
 
     <script src="script.js"></script>

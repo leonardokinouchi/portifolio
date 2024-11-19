@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 nav ul {
     position: relative;
     width: 80%;
@@ -12,7 +16,7 @@ nav ul {
 
 nav ul li a {
 
-    color: rgb(217, 217, 217);
+    color: rgb(236, 236, 236);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -21,10 +25,10 @@ nav ul li a {
     display: inline-block;
 }
 
-a:hover{
-    color: #9deefc; /* Cor do texto ao passar o mouse */
+.link:hover{
+    color: #ffffff; /* Cor do texto ao passar o mouse */
     transform: scale(1.1);
-    text-shadow: 0px 0px 5px rgb(251, 80, 225), 0px 0px 5px rgb(148, 232, 255);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 5px rgb(255, 255, 255);
 }
 
 body {
@@ -56,7 +60,7 @@ main{
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 50%; /* Opcional: deixa a imagem com cantos arredondados */
     filter: brightness(0.9);
-    border: 2px solid #cccbcb93;
+    border: 2px solid #d0d0d093;
     padding: 20px;
     z-index: 1;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra para dar destaque */
@@ -68,7 +72,8 @@ main{
 #texto{
     background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
     border-radius: 10px;
-    padding: 20px;
+    font-weight: bold;
+    padding: 30px;
     max-width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Sombra para destaque */
     text-align: justify;
@@ -132,22 +137,23 @@ main{
 @keyframes ligarTV {
     0% {
         opacity: 0;
-        transform: scaleX(0) scaleY(0.02); /* Linha fina no centro */
-        text-shadow: 0px 0px 10px rgba(115, 255, 255, 0.6), 0px 0px 20px rgba(255, 112, 255, 0.6);
+        transform: scaleX(0) scaleY(0.1); /* Linha fina no centro */
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6), 0px 0px 20px rgba(255, 255, 255, 0.6);
     }
     30% {
         opacity: 1;
-        transform: scaleX(1.8) scaleY(0.1); /* Expande lateralmente */
-        text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8), 0px 0px 30px rgba(255, 112, 255, 0.8);
+        transform: scaleX(3) scaleY(0.2); /* Expande lateralmente */
+        text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.8);
     }
     60% {
-        transform: scaleX(1) scaleY(1); /* Volta ao tamanho normal */
-        text-shadow: 0px 0px 15px rgba(141, 253, 253, 1), 0px 0px 35px rgba(255, 112, 255, 0.9), 0px 0px 50px rgba(0, 128, 255, 0.8);
+        transform: scaleX(1) scaleY(0.5); /* Volta ao tamanho normal */
+        text-shadow: 0px 0px 15px rgb(255, 255, 255), 0px 0px 35px rgba(195, 195, 195, 0.9), 0px 0px 50px rgba(0, 128, 255, 0.8);
     }
     100% {
         opacity: 1;
+        transform: scaleX(1) scaleY(1); /* Volta ao tamanho normal */
         
-        text-shadow: 0px 0px 1px rgb(166, 250, 250), 0px 0px 0px rgb(113, 217, 255), 0px 0px 5px #ff21ff, 5px 5px 1px rgb(0, 0, 0);
+        text-shadow: 0px 0px 1px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255), 0px 0px 4px #ffffff, 5px 5px 1px rgb(0, 0, 0);
     }
 }
 
@@ -165,7 +171,7 @@ section{
     background-image: url(rsc/main.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    height: 600px;
+    height: 700px;
     width: auto;
     overflow: hidden;
 }
@@ -173,7 +179,7 @@ section{
 footer{
     background-image: url(rsc/fundo3.png);
     background-size: cover;
-    height: 300px;
+    height: 250px;
     width: auto;
 }
 
@@ -244,3 +250,68 @@ p{
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+
+.curriculo{ 
+    position: relative;
+    width: 400px;
+    height: 500px;
+
+    background-image: url(rsc/curriculo.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    border: 3px solid #4c60c2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    
+}
+
+.botao-baixar{
+    position: relative;
+}
+
+#curriculo_botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.botao-baixar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3550ec; /* Cor do botão */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: 1px solid #11183a;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.icons{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Tamanho do ícone */
+    color: #ffffff; /* Cor do ícone */
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.link-footer:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 5px rgb(255, 255, 255);
+}
