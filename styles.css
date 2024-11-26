@@ -351,9 +351,20 @@ p{
     height: auto;
     width: auto;
     overflow: hidden;
-    pointer-events: none; /* As partículas não interferem com cliques */
     background-color: #000; /* Fundo preto para simular o espaço */
     z-index: 0;
     padding-bottom: 100px;
 }
 
+#link{
+    position: relative;
+    top: -10vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:larger;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+#link:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 5px rgb(255, 255, 255);
+}
